@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> Swap Paragraph </title>
+<script>
+
+	function f1(){
+		/* alert("hello");*/
+		e1 = document.getElementById("p1");
+		e1.innerHTML = "<u>This is the entertainment News</u>";
+	}
+	
+	function f2(){
+		
+		e2 = document.getElementById("p1");
+		e2.innerHTML = "<u>This is the sports News</u>";
+	}
+
+	function f3(){
+
+		e3 = document.getElementById("p1");
+		e3.innerHTML = "<u>This is the Market News</u>";
+
+	}
+
+</script>
+
+</head>
+
+<body bgcolor="orange">
+	
+	<center>
+		<h1><font size="16" color="green">News Board</font>
+	</center>
+	<input type="button" value="entertainment" onClick="f1()"/><br>
+	<input type="button" value="sports" onClick="f2()"/><br>
+	<input type="button" value="Market" onClick="f3()"/><br>
+	<p id="p1"></p>
+	
+</body>
+</html>

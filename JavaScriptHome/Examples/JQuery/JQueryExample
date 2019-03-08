@@ -1,0 +1,39 @@
+
+// show/ hide example.
+
+<!DOCTYPE html>
+	<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<script>
+
+			$(document).ready(function(){
+
+    			$("button").click(function(){
+
+    			// Miliseconds are given:
+
+        			$("p").hide(1000);
+
+    			});
+
+			});
+
+</script>
+
+</head>
+
+<body>
+
+		<button>Hide</button>
+		<p>This is a paragraph with little content.</p>
+		<p>This is another small paragraph.</p>
+
+</body>
+
+</html>
+
+
+
+// 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> Swap Images </title>
+<script>
+
+	function f1(){
+		
+		e1 = document.getElementById("img");
+		e1.src = "images/i1.jpg";
+	}
+	
+	function f2(){
+		
+		e2 = document.getElementById("img");
+		e2.src = "images/i2.jpg";
+	}
+
+	function f3(){
+		
+		e3 = document.getElementById("img");
+		e3.src = "images/i3.jpg";
+	}
+
+
+</script>
+
+</head>
+
+<body bgcolor="orange">
+
+	<input type="button" value="image1" onClick="f1()"/><br>
+	<input type="button" value="image2" onClick="f2()"/><br>
+	<input type="button" value="image3" onClick="f3()"/><br>
+	<img id = "img" height="100" width=""/>
+	
+	
+
+</body>
+</html>

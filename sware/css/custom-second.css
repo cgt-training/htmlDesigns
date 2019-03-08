@@ -1,0 +1,438 @@
+@media  (min-width : 768px) and (max-width : 1024px){
+   
+.category-border-div 
+{
+
+    width: 95%;
+    height: 460px;
+    float: left;
+    border: solid 1px;
+    border-color: #cccccc;
+
+}
+.child-main-div-magzine
+ {
+
+    height: 405px;
+    width: 95%;
+    float: left;
+    border: solid 1px;
+    border-color: #cccccc;
+
+}
+.inside-look {
+
+    height: 60px;
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #a7a7a7;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+.second-stars {
+
+    width: 50%;
+    height: 30px;
+    float: left;
+    padding-top: 8px;
+    text-align: center;
+    padding-left: 0px;
+
+}
+.responsive-image
+{
+
+	float: left;
+}
+.product-text 
+{
+
+    color: black;
+    font-size: 11px;
+    padding-top: 17px;
+
+}
+.image-1234
+ {
+
+    height: 204px;
+    width: 100%;
+    float: none;
+    display: inline-block;
+
+}
+.image-12345 
+{
+
+    height: 204px;
+    width: 100%;
+    float: none;
+    display: inline-block;
+
+}
+.newsletter-child-1
+ {
+
+    height: 70px;
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    color: black;
+    padding-top: 25px;
+
+}
+.newsletter-child-2 
+{
+
+    height: 70px;
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    color: black;
+    padding-top: 5px;
+
+}
+.text-box
+ {
+
+    height: 30px;
+    width: 75%;
+    float: left;
+    padding-top: 60px;
+
+}
+.search-button
+{
+
+    width: 25%;
+    height: 30px;
+    float: left;
+    padding-top: 60px;
+    padding-left: 5px;
+
+}
+.about-retail-mart-2 
+{
+
+    height: 70px;
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    font-size: 11px;
+    padding-top: 20px;
+
+}
+.footer-child-div-2
+ {
+
+    height: 238px;
+    width: 25%;
+    float: left;
+    padding-top: 35px;
+
+}
+.ul-li-div 
+{
+
+    /*height: 238px;*/
+    width: 50%;
+    float: left;
+    font-size: 11px;
+
+}
+.ul-1 
+{
+
+    list-style: none;
+    color: white;
+    line-height: 28px;
+    padding-left: 25px
+}
+.ul-li-div-2 {
+
+    /*height: 208px;*/
+    width: 50%;
+    float: left;
+    font-size: 11px;
+
+}
+.useful-lnks
+ {
+
+    height: 30px;
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    padding-left: 24px;
+
+}
+.contact-text-div 
+{
+
+    height: 70px;
+    width: 100%;
+    float: left;
+    font-size: 11px;
+    color: white;
+    padding-top: 12px;
+
+}
+.phone 
+{
+
+    height: 30px;
+    width: 100%;
+    float: left;
+    color: white;
+    font-size: 12px;
+
+}
+.email-div
+ {
+
+    height: 40px;
+    width: 100%;
+    float: left;
+    color: white;
+    font-size: 12px;
+
+}
+.all-right-reserved 
+{
+
+    height: 40px;
+    width: 30%;
+    float: left;
+    color: white;
+    padding-top: 10px;
+    font-size: 12px;
+
+}
+.last-div-3
+ {
+
+    width: 45%;
+    height: 40px;
+    float: left;
+
+}
+.image-footer-payple 
+{
+
+    height: 40px;
+    width: 25%;
+    float: left;
+
+}
+.first-stars 
+{
+
+    width: 50%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 11px;
+    border-right: solid 1px;
+    border-color: #dddddd;
+
+}
+
+
+
+
+.center-mid-div-1 {
+
+    height: 85px;
+    width: 40%;
+    float: left;
+    background: black;
+    margin-top: 11px;
+    margin-left: 5px;
+    text-align: center;
+
+}
+.prada 
+{
+
+    font-size: 12px;
+    color: white;
+    float: none;
+    display: inline-block;
+    padding-top: 35px;
+
+}
+.top-texof-stores
+ {
+
+    width: 55%;
+    float: left;
+    height: 35px;
+    font-size: 10px;
+    color: black;
+    padding-top: 10px;
+    padding-left: 5px;
+
+}
+.bottom-texof-stores {
+
+    width: 55%;
+    float: left;
+    height: 22px;
+    font-size: 12px;
+    color: black;
+    padding-top: 5px;
+    padding-left: 5px;
+
+}
+.down-texof-stores 
+{
+
+    width: 56%;
+    float: left;
+    height: 40px;
+    font-size: 10px;
+    color: #ee3232;
+    padding-top: 0px;
+    padding-left: 5px;
+
+}
+.first-fress-find
+ {
+    height: 235px;
+    width: 100%;
+    float: left;
+    background-color: #fde9d0;
+    text-align: center;
+    padding-top: 65px;
+}
+.border-div-1 
+{
+    height: 110px;
+    width: 250px;
+    float: none;
+    border: solid 5px;
+    display: inline-block;
+    border-color: #ffffff;
+    border-radius: 15px;
+}
+.middle-div-1 
+{
+    height: 55px;
+    width: 100%;
+    float: left;
+    color: white;
+    font-size: 18px;
+    padding-top: 25px;
+}
+.middle-div-2 
+{
+    height: 50px;
+    width: 100%;
+    float: left;
+    color: white;
+    font-size: 14px;
+}
+.second-fress-find 
+{
+    height: 235px;
+    width: 100%;
+    float: left;
+    background-color: #41719f;
+    text-align: center;
+    padding-top: 65px;
+}
+.left-one 
+{
+
+    width: 75%;
+    float: left;
+    height: 45px;
+    font-size: 12px;
+    color: black;
+
+}
+.Right-one
+ {
+
+    width: 25%;
+    float: left;
+    height: 45px;
+    font-size: 9px;
+    color: #4492d2;
+
+}
+.text-1-profile
+ {
+
+    height: 22px;
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    color: black;
+    padding-left: 10px;
+
+}
+.text-2-profile
+ {
+
+    height: 30px;
+    width: 100%;
+    float: left;
+    font-size: 10px;
+    color: black;
+    padding-left: 7px;
+
+}
+.stars-1
+{
+	width: 100%;
+}
+.text-3-profile 
+{
+
+    height: 25px;
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    color: black;
+    padding-left: 7px;
+
+}
+.text-5-profile
+ {
+
+    height: 20px;
+    width: 100%;
+    float: left;
+    font-size: 11px;
+    color: red;
+    padding-left: 7px;
+
+}
+.profile-photo-3 
+{
+
+    height: 102px;
+    width: 40%;
+    float: left;
+    background-image: url("../images/tg-solution-group-logo.png");
+    text-align: center;
+    background-size: cover;
+
+}
+.denium-store-2 
+{
+
+    height: 55px;
+    width: 100%;
+    float: left;
+    color: black;
+    font-size: 10px;
+    padding-left: 10px;
+    line-height: 15px;
+
+}
+}

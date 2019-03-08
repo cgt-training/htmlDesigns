@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> Tabing Example </title>
+	<!--<style>
+		
+		table{
+			border-width:1px;
+			border-color:black;
+			background-color:yellow;
+		}
+	
+		th{
+			border-width:1px;
+			border-color:black;
+			background-color:orange;
+		}
+	</style>-->
+<script>
+
+		
+	function openTab(tabId){
+		
+		var thObj = document.getElementById(tabId);
+		thObj.style.background-color ='white';
+		thObj.style.borderBottomWidth = '0px';
+	}
+
+	function closeTab(tabId){
+		
+		var thObj = document.getElementById(tabId);
+		thObj.style.background-color ='orange';
+		thObj.style.borderBottomWidth = '1px';
+	}
+
+	function displayP(){
+
+		alert("displayP()");
+		var pObj = document.getElementById("newB");
+		pObj.innerHTML = "<u><b> vaibhsa </b></u><br> <u><b> Sharma </b></u>";
+
+		openTab("th1");
+		closeTab("th2");
+		closeTab("th3");
+
+	}
+
+	function displayB(){
+
+		alert("displayB()");
+		var pObj = document.getElementById("newB");
+		pObj.innerHTML = "<u><b> vaibs </b></u><br> <u><b> says hello </b></u>";
+
+		openTab("th2");
+		closeTab("th1");
+		closeTab("th3");
+
+	}
+
+
+	function displayE(){
+
+		alert("displayE()");
+		
+		var pObj = document.getElementById("newB");
+		pObj.innerHTML = "<u><b> Vaibhav </b></u><br> <u><b> says Jai Shanker </b></u>";
+		openTab("th2");
+		closeTab("th1");
+		closeTab("th3");
+
+	}
+
+</script>
+
+</head>
+
+<body>
+	<center>
+
+		<table border=0 width='50%' cellspacing=0>
+			
+			<tr>
+				<!--<th id='th1'><input type="button" value="politics" onClick="displayP()"/></th>
+				<th id='th2'><input type="button" value="Business" onClick="displayB()"/></th>
+				<th id='th3'><input type="button" value="Entertainment" onClick="displayE()"/></th>
+				
+				<input type="button" value="politics" onClick="displayP()"/>
+				<input type="button" value="politics" onClick="displayB()"/>
+				<input type="button" value="politics" onClick="displayE()"/>-->
+			</tr>
+
+			<tr height=100px>
+				<td colspan=3>	
+					<p id="newB"></p>
+				</td>
+			</tr>
+
+		</table>
+
+	</center>
+				
+				<input type="button" value="politics" onClick="displayP()"/>
+				<input type="button" value="Business" onClick="displayB()"/>
+				<input type="button" value="Entertainment" onClick="displayE()"/>
+
+</body>
+</html>

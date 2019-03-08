@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <link rel="stylesheet"  href="css/upose.css">
+  <link rel="stylesheet"  href="css/uposeresponsive.css">
+
+  <title>UPOSE</title>
+  </head>
+  <script>
+  function fullscreenFix(){
+    var h = $('body').height();
+    // set .fullscreen height
+    $(".content-b").each(function(i){
+        if($(this).innerHeight() > h){ $(this).closest(".fullscreen").addClass("overflow");
+        }
+    });
+}
+$(window).resize(fullscreenFix);
+fullscreenFix();
+
+/* resize background images */
+function backgroundResize(){
+    var windowH = $(window).height();
+    $(".background").each(function(i){
+        var path = $(this);
+        // variables
+        var contW = path.width();
+        var contH = path.height();
+        var imgW = path.attr("data-img-width");
+        var imgH = path.attr("data-img-height");
+        var ratio = imgW / imgH;
+        // overflowing difference
+        var diff = parseFloat(path.attr("data-diff"));
+        diff = diff ? diff : 0;
+        // remaining height to have fullscreen image only on parallax
+        var remainingH = 0;
+        if(path.hasClass("parallax")){
+            var maxH = contH > windowH ? contH : windowH;
+            remainingH = windowH - contH;
+        }
+        // set img values depending on cont
+        imgH = contH + remainingH + diff;
+        imgW = imgH * ratio;
+        // fix when too large
+        if(contW > imgW){
+            imgW = contW;
+            imgH = imgW / ratio;
+        }
+        //
+        path.data("resized-imgW", imgW);
+        path.data("resized-imgH", imgH);
+        path.css("background-size", imgW + "px " + imgH + "px");
+    });
+}
+$(window).resize(backgroundResize);
+$(window).focus(backgroundResize);
+backgroundResize();
+  </script>
+<script>
+  $('#carousel-example-generic').carousel({
+    interval:300
+});
+
+</script>
+ 
+<script>
+
+</script>
+   <body>
+    <div class="one">
+  <div class="container-fluid" style="padding:0px;">
+<nav role="navigation" class="navbar navbar-default post" style="margin-bottom:0px;">
+      <div class="container" style="">
+        
+        <div class="navbar-header pull-left">
+          <a href="#" class="navbar-brand brand">Share The Looks</a>
+        </div>
+        <div class="navbar-header head" style="">
+          <ul class="nav pull-left">
+            <li class="navbar-text pull-left pull">Sign UP</li>
+            <li class="navbar-text pull-right">Sign In</li>
+          </ul>
+
+          <!-- Required bootstrap placeholder for the collapsed menu -->
+         
+        </div>
+
+         <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle tog"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <div class="collapse navbar-collapse navbar-right over" style="padding:0px;">
+        
+          <ul class="nav navbar-nav pull-right down">
+            <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background:#E0E0E0;padding:9px;margin-top:6px;margin-right:4px;color:black;border-radius:10px;
+    border:1px solid #E0E0E0;"><span class="glyphicon glyphicon-menu-hamburger" style="padding-right:8px;"></span>MENU</a>
+          <ul class="dropdown-menu color">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">products</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </li>
+            <li class="class1"><a href="#" class="buttona" style="border-radius:10px;border:1px solid black;padding:10px;">Post New Listings</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+</div>
+
+    </div>
+
+<div class="fullscreen background" style="background:url('../upose/img/bg1.png');" data-img-width="1820" data-img-height="1140">
+    <div class="content-a">
+        <div class="content-b">
+          <div class="twoa">
+ <div class="two1">
+  <h3 class="sit">LOREM IPSUM DOLOR SIT AMET</h3>
+  <p>Suspendisse imperidict solliticidin risus ultriesis id.</p>
+
+ </div><!-- two1 -->
+
+ <div class="two2">
+ <form class="tab">
+   <div class="tab1">
+        <input type="text" class="form-control two3" placeholder="Where Would You Like To Book?">
+        </div>
+        <button type="submit" class="btn btn-default two4">Search</button>
+  </form>
+  </div>
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="three">
+ <div class="container-fluid">
+ <h3>HOW IT WORKS</h3>
+ <p>Suspendisse imperidict solliticidin risus ultriesis id.</p>
+  <div class="row">
+  <div class="col-md-1 col-sm-1"></div><!-- col-sm-1 -->
+  <div class="col-sm-10 col-md-10" style="margin-top:15px;padding:0px;">
+  <div class="col-md-3 col-sm-3 col-xs-6 three1">
+   <img src="img/laptop.png" class="img-responsive displayed" style="height:50px;margin-bottom:10px;">
+   <div class="font">Nunc a metus porta,sapien, gravidae</div>
+   <div class="font">miaeciaenas aliqulore ulteriecies odio.</div>
+   <div class="font">nec pretium sem varius non.</div>
+  </div><!-- col-sm-3 -->
+  <div class="col-md-3 col-sm-3 col-xs-6 three2">
+  <img src="img/clock.png" class="img-responsive displayed" style="height:50px;margin-bottom:10px;">
+   <div class="font">Nunc a metus porta,sapien, gravidae</div>
+   <div class="font">miaeciaenas aliqulore ulteriecies odio.</div>
+   <div class="font">nec pretium sem varius non.</div>
+  </div><!-- col-sm-3 -->
+  <div class="col-md-3 col-sm-3 col-xs-6 three3">
+  <img src="img/cloud.png" class="img-responsive displayed" style="height:50px;margin-bottom:10px;">
+   <div class="font">Nunc a metus porta,sapien, gravidae</div>
+   <div class="font">miaeciaenas aliqulore ulteriecies odio.</div>
+   <div class="font">nec pretium sem varius non.</div>
+  </div><!-- col-sm-3 -->
+   <div class="col-md-3 col-sm-3 col-xs-6 three4">
+   <img src="img/laptop.png" class="img-responsive displayed" style="height:50px;margin-bottom:10px;">
+    <div class="font">Nunc a metus porta,sapien, gravidae</div>
+   <div class="font">miaeciaenas aliqulore ulteriecies odio.</div>
+   <div class="font">nec pretium sem varius non.</div>
+   </div><!-- col-sm-3 -->
+  </div><!--  col-sm-10 -->
+  <div class="col-lg-1 col-md-1 col-sm-1"></div><!-- col-sm-1 -->
+</div><!-- row -->
+ </div><!-- container-fluid -->
+</div><!-- three -->
+
+<div class="four">
+ <div class="container-fluid">
+  <h3 style="margin-top:30px;">Discover</h3>
+  <div class="row">
+  <div class="col-md-1 col-sm-1"></div><!-- col-sm-1 -->
+  <div class="col-md-10 col-sm-10">
+  <div class="col-md-3 col-sm-3 col-xs-6 four1">
+  <main>
+  <img src="img/paris.png" class="img-rounded adjust" style="width:100%;">
+  <div class="shadow"><div style="position:absolute;bottom:2px;left:20px;"><b>PARIS</b></div></div>
+  </main>
+  </div>
+
+  <div class="col-md-3 col-sm-3 col-xs-6 four2">
+  <main>
+  <img src="img/dubai.png" class="img-rounded adjust" style="width:100%;">
+  <div class="shadow"><div style="position:absolute;bottom:2px;left:20px;"><b>DUBAI</b></div></div>
+  </main>
+    </div>
+
+  <div class="col-md-6 col-sm-6 col-xs-12 four3" style="border:1px solid transparent;border-radius:10px;">
+  <main>
+  <img src="img/cal.png" class="img-rounded adjust" style="width:100%;">
+  <div class="shadow"><div style="position:absolute;bottom:2px;left:20px;"><b>CALIFORNIA</b></div></div>
+  </main>
+    </div>
+  </div><!-- col-sm-10-->
+  <div class="col-md-1 col-sm-1"></div><!-- col-sm-1 -->
+  </div><!-- row -->
+
+   <div class="row" style="margin-top:10px;">
+  <div class="col-md-1 col-sm-1"></div><!-- col-sm-1 -->
+  <div class="col-md-10 col-sm-10">
+  <div class="col-md-6 col-sm-6 col-xs-12 four4" style="border:1px solid transparent;border-radius:10px;">
+<main>
+  <img src="img/rome.png" class="img-rounded adjust" style="width:100%;">
+  <div class="shadow"><div style="position:absolute;bottom:2px;left:20px;"><b>ROME</b></div></div>
+  </main>
+    </div>
+
+  <div class="col-md-3 col-sm-3 col-xs-6 four5">
+  <main>
+  <img src="img/bar.png" class="img-rounded adjust" style="width:100%;">
+  <div class="shadow"><div style="position:absolute;bottom:2px;left:20px;"><b>BARCELONA</b></div></div>
+  </main>
+    </div>
+
+  <div class="col-md-3 col-sm-3 col-xs-6 four6">
+   <main>
+  <img src="img/thailand.png" class="img-rounded adjust" style="width:100%;">
+  <div class="shadow"><div style="position:absolute;bottom:2px;left:20px;"><b>THAILAND</b></div></div>
+  </main>
+    </div>
+  </div><!-- col-sm-10-->
+  <div class="col-md-1 col-sm-1"></div><!-- col-sm-1 -->
+  </div><!-- row -->
+
+ </div><!-- container-fluid -->
+</div><!--four-->
+
+<div class="five">
+ <div class="container-fluid">
+  <h3 style="margin-top:30px;">Featured Items</h3>
+   
+     <div class="bannerdivfull">
+<div id="carousel-example-generic " class="carousel slide" data-ride="carousel" style="">
+  <!-- Indicators -->
+  <ol class="carousel-indicators slider1">
+  <li data-target="#carousel-example-generic" data-slide-to="0" class="active" style="background:#0003;"></li>
+  <li data-target="#carousel-example-generic" data-slide-to="1" style="background:#0003;"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <div class="row space">
+              <div class="col-sm-3 col-md-3"></div>
+               <div class="col-sm-2 col-md-2 col-xs-12 five1">
+               <div class="panel panel-default">
+             <div class="panel-body" style="padding:1px;"> <img src="img/outwear.png" class="img-responsive" style="border:0.2px solid white;width:100%;height:180px;"><div class="right">From<br><b>$199</b></div></div>
+            <div class="panel-footer" style="padding:1px;background:white;"><div class="tea">
+                 <div><b>OUTWEAR</b></div>
+                  <p style="font-size:8px;word-spacing:2px;">Nunc a metus porta,sapien, gravidae miaeciaenas aliqulore ulteriecies odio.nec pretium sem varius non.</p>
+                 </div></div>
+              </div>
+
+                
+                 
+                  </div><!-- col-sm-3 -->
+                   <div class="col-sm-2 col-md-2 col-xs-12 five1">
+                  <div class="panel panel-default">
+                       <div class="panel-body" style="padding:1px;"><img src="img/dress.png" class="img-responsive"style="border:0.2px solid white;width:100%;height:180px;" ><div class="right">From<br><b>$199</b></div></div>
+                      <div class="panel-footer" style="padding:1px;background:white;"><div class="tea"><div><b>DRESS</b></div><p style="font-size:8px;word-spacing:2px;">Nunc a metus porta,sapien, gravidae miaeciaenas aliqulore ulteriecies odio.nec pretium sem varius non.</p></div></div>
+                    </div>  
+                  </div>
+
+                <div class="col-sm-2 col-md-2 col-xs-12 five1">
+               <div class="panel panel-default">
+                <div class="panel-body" style="padding:1px;"><img src="img/bag.png" class="img-responsive" style="border:0.2px solid white;width:100%;height:180px;"><div class="right">From<br><b>$199</b></div></div>
+                <div class="panel-footer" style="padding:1px;background:white;"><div class="tea"><div><b>ACCESORIES</b></div><p style="font-size:8px;word-spacing:2px;">Nunc a metus porta,sapien, gravidae miaeciaenas aliqulore ulteriecies odio.nec pretium sem varius non.</p></div></div>
+              </div>
+           </div>
+   <div class="col-sm-2 col-md-2"></div>
+ </div><!-- row -->  
+      <div class="carousel-caption">
+    
+      </div>
+    </div>
+    <div class="item">
+    <div class="row space">
+              <div class="col-sm-3 col-md-3"></div>
+               <div class="col-sm-2 col-md-2 col-xs-12 five1">
+                
+              <div class="panel panel-default">
+             <div class="panel-body" style="padding:1px;"> <img src="img/outwear.png" class="img-responsive" style="border:0.2px solid white;width:100%;height:180px;"><div class="right">From<br><b>$199</b></div></div>
+            <div class="panel-footer" style="padding:1px;background:white;"><div class="tea">
+                 <div><b>OUTWEAR</b></div>
+                  <p style="font-size:8px;word-spacing:2px;">Nunc a metus porta,sapien, gravidae miaeciaenas aliqulore ulteriecies odio.nec pretium sem varius non.</p>
+                 </div></div>
+              </div>
+
+                  </div>
+                   <div class="col-sm-2 col-md-2 col-xs-12 five1">
+
+                   <div class="panel panel-default">
+                       <div class="panel-body" style="padding:1px;"><img src="img/dress.png" class="img-responsive"style="border:0.2px solid white;width:100%;height:180px;" ><div class="right">From<br><b>$199</b></div></div>
+                      <div class="panel-footer" style="padding:1px;background:white;"><div class="tea"><div><b>DRESS</b></div><p style="font-size:8px;word-spacing:2px;">Nunc a metus porta,sapien, gravidae miaeciaenas aliqulore ulteriecies odio.nec pretium sem varius non.</p></div></div>
+                    </div>  
+                  
+                  </div>
+
+                <div class="col-sm-2 col-md-2 col-xs-12 five1">
+                 <div class="panel panel-default">
+                <div class="panel-body" style="padding:1px;"><img src="img/bag.png" class="img-responsive" style="border:0.2px solid white;width:100%;height:180px;"><div class="right">From<br><b>$199</b></div></div>
+                <div class="panel-footer" style="padding:1px;background:white;"><div class="tea"><div><b>ACCESORIES</b></div><p style="font-size:8px;word-spacing:2px;">Nunc a metus porta,sapien, gravidae miaeciaenas aliqulore ulteriecies odio.nec pretium sem varius non.</p></div></div>
+              </div>
+               
+           </div>
+
+   <div class="col-sm-2 col-md-2"></div>
+ </div><!-- row -->  
+      <div class="carousel-caption">
+  </div>
+</div>
+
+</div>
+</div> 
+
+</div>
+
+
+  </div><!-- container-fluid -->
+</div><!--five-->
+
+<div class="six">
+ <div class="container-fluid">
+ <h3>WHY US</h3>
+ <p>Suspendisse imperidict solliticidin risus ultriesis id.</p>
+  <div class="row">
+  <div class="col-md-1 col-sm-1"></div><!-- col-sm-1 -->
+  <div class="col-sm-10 col-md-10" style="margin-top:15px;padding:0px;">
+  <div class="col-md-3 col-sm-3 col-xs-6 three1">
+   <img src="img/laptop.png" class="img-responsive displayed" style="height:50px;margin-bottom:10px;">
+   <div class="font">Nunc a metus porta,sapien, gravidae</div>
+   <div class="font">miaeciaenas aliqulore ulteriecies odio.</div>
+   <div class="font">nec pretium sem varius non.</div>
+  </div><!-- col-sm-3 -->
+  <div class="col-md-3 col-sm-3 col-xs-6 three2">
+  <img src="img/clock.png" class="img-responsive displayed" style="height:50px;margin-bottom:10px;">
+   <div class="font">Nunc a metus porta,sapien, gravidae</div>
+   <div class="font">miaeciaenas aliqulore ulteriecies odio.</div>
+   <div class="font">nec pretium sem varius non.</div>
+  </div><!-- col-sm-3 -->
+  <div class="col-md-3 col-sm-3 col-xs-6 three3">
+  <img src="img/cloud.png" class="img-responsive displayed" style="height:50px;margin-bottom:10px;">
+   <div class="font">Nunc a metus porta,sapien, gravidae</div>
+   <div class="font">miaeciaenas aliqulore ulteriecies odio.</div>
+   <div class="font">nec pretium sem varius non.</div>
+  </div><!-- col-sm-3 -->
+   <div class="col-md-3 col-sm-3 col-xs-6 three4">
+   <img src="img/laptop.png" class="img-responsive displayed" style="height:50px;margin-bottom:10px;">
+    <div class="font">Nunc a metus porta,sapien, gravidae</div>
+   <div class="font">miaeciaenas aliqulore ulteriecies odio.</div>
+   <div class="font">nec pretium sem varius non.</div>
+   </div><!-- col-sm-3 -->
+  </div><!--  col-sm-10 -->
+  <div class="col-md-1 col-sm-1"></div><!-- col-sm-1 -->
+</div><!-- row -->
+ </div><!-- container-fluid -->
+</div><!--six -->
+
+<div class="seven">
+<div class="container-fluid">
+
+ <h3 class="six1">Milestone</h3>
+
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+
+  <ol class="carousel-indicators indicate">
+  <li data-target="#carousel-example-generic" data-slide-to="0" class="active" style="background:#0003;"></li>
+  <li data-target="#carousel-example-generic" data-slide-to="1" style="background:#0003;"></li>
+  <li data-target="#carousel-example-generic" data-slide-to="2" style="background:#0003;"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+       <div class="row" style="padding-top:30px;padding-bottom:40px;">
+ <div class="col-sm-2 col-md-2"></div>
+ <div class="col-sm-8 col-md-8 col-sx-12 sevenA">
+  <div><div><span style="font-size:25px;">"</span> We Get Inspiration from being in different Surroundings,</div>
+  <div style="margin-top:8px;">so we go on lots of adventures.That's was Upose is</div>
+  <div>amazing-for making variety accesible.
+  <span style="font-size:25px;text-align:right;">"</span></div>
+  </div>
+  <div class="row">
+  <div class="col-sm-12 col-md-12 col-xs-12" style="margin-top:10px;">
+    <div class="center"><b>JOHN SMITH</b></div>
+  </div><!-- col-sm-12 -->
+</div><!-- row -->
+
+ </div><!-- col-sm-8 -->
+ <div class="col-sm-1 col-md-1"></div>
+ </div><!-- row -->
+    </div>
+    <div class="item">
+      <div class="row" style="padding-top:30px;padding-bottom:40px;">
+ <div class="col-sm-2 col-md-2"></div>
+ <div class="col-sm-8 col-md-8 col-sx-12 sevenA">
+ <div><div><span style="font-size:25px;">"</span>We Get Inspiration from being in different Surroundings,</div>
+  <div style="margin-top:8px;">so we go on lots of adventures.That's was Upose is</div>
+  <div>amazing-for making variety accesible.<span style="font-size:25px;text-align:right;">"</span></div>
+  </div>
+  <div class="row">
+  <div class="col-sm-12 col-md-12 col-xs-12" style="margin-top:10px;">
+    <div class="center"><b>JOHN SMITH</b></div>
+  </div><!-- col-sm-12 -->
+</div><!-- row -->
+
+ </div><!-- col-sm-8 -->
+ <div class="col-sm-1 col-md-1"></div>
+ </div><!-- row -->
+</div>
+
+<div class="item">
+      <div class="row" style="padding-top:30px;padding-bottom:40px;">
+ <div class="col-sm-2 col-md-2"></div>
+ <div class="col-sm-8 col-md-8 col-sx-12 sevenA">
+ <div><div><span style="font-size:25px;">"</span>We Get Inspiration from being in different Surroundings,</div>
+  <div style="margin-top:8px;">so we go on lots of adventures.That's was Upose is</div>
+  <div>amazing-for making variety accesible.<span style="font-size:25px;text-align:right;">"</span></div>
+  </div>
+  <div class="row">
+  
+  <div class="col-sm-12 col-md-12 col-xs-12" style="margin-top:10px;">
+    <div class="center"><b>JOHN SMITH</b></div>
+  </div><!-- col-sm-12 -->
+  
+</div><!-- row -->
+
+ </div><!-- col-sm-8 -->
+ <div class="col-sm-1 col-md-1"></div>
+ </div><!-- row -->
+    
+</div>
+
+</div>
+</div> 
+
+
+</div><!-- container-fluid -->
+</div><!-- seven -->
+
+
+<div class="eight">
+<div class="container-fluid">
+ <div class="row">
+ <div class="col-sm-1 col-md-1"></div>
+ <div class="col-sm-10 col-md-10">
+  <div class="col-sm-3 col-md-3 col-xs-6" style="display:inline;padding:0px;">
+
+  <div class="eight1" style="float:left"><b>93%</b>
+  </div>
+  <div style="float:left; margin-left:0px">
+    <div class="" style="font-size:10px;margin-left:5px">Positive</div>
+   <div style="font-size:10px">Positive</div>
+  </div>
+  </div><!-- col-sm-3 -->
+
+  <div class="col-sm-3 col-md-3 col-xs-6" style="display:inline;padding:0px;">
+  <div class="eight2" style="float:left"><b>120K</b>
+  </div>
+  <div style="float:left; margin-left:0px">
+    <div class="" style="font-size:10px;margin-left:5px;text-align:left;">sq feet of</div>
+   <div style="font-size:10px">rented workspace</div>
+  </div>
+
+  </div><!-- col-sm-3 -->
+
+  <div class="col-sm-3 col-md-3 col-xs-6 helloa" style="display:inline;">
+  <div class="eight3" style="float:left"><b>145</b>
+  </div>
+  <div style="float:left; margin-left:0px">
+    <div class="" style="font-size:10px;margin-left:5px">workspaces</div>
+   <div style="font-size:11px">on Boats</div>
+  </div>
+  </div><!-- col-sm-3 -->
+
+  <div class="col-sm-3 col-md-3 col-xs-6 helloa" style="display:inline;">
+  <div class="eight4" style="float:left"><b>24</b>
+  </div>
+  <div style="float:left; margin-left:0px">
+    <div class="" style="font-size:10px;margin-left:5px">Cities across</div>
+   <div style="font-size:11px">the globe</div>
+  </div>
+  </div><!-- col-sm-3 -->
+ </div><!-- col-sm-10 -->
+ <div class="col-sm-1 col-md-1"></div>
+ </div><!-- row -->
+</div><!-- container-fluid -->
+</div><!-- eight-->
+
+<div class="nine">
+<div class="container-fluid">
+<h3>As Seen On</h3>
+<div class="row" style="margin-top:20px;">
+<div class=" col-sm-1 col-md-1"></div>
+<div class="col-sm-10 col-md-10">
+ <div class="col-sm-3 col-md-3 col-xs-6 nine1" style=""><img src="img/hyper.png" class="img-responsive" style="height:30px;margin-bottom:20px;"></div><!-- col-sm-3 -->
+ <div class="col-sm-3 col-md-3 col-xs-6 nine1"><img src="img/bbc.png" class="img-responsive" style="height:30px;margin-bottom:20px;"></div><!-- col-sm-3 -->
+ <div class="col-sm-3 col-md-3 col-xs-6 nine1"><img src="img/fade.png" class="img-responsive" style="height:30px;margin-bottom:20px;"></div><!-- col-sm-3 -->
+ <div class="col-sm-3 col-md-3 col-xs-6 nine1"><img src="img/p.png" class="img-responsive" style="height:30px;margin-bottom:20px;"></div><!-- col-sm-3 -->
+ 
+</div><!-- col-sm-10 -->
+<div class="col-sm-1 col-md-1"></div>
+</div>
+ 
+</div><!-- container-fluid -->
+</div><!-- nine -->
+
+
+<div class="footer">
+<div class="container-fluid">
+<div class="row" style="margin-top:20px;">
+<div class="col-lg-1 col-sm-1 col-md-1"></div>
+<div class="col-lg-10 col-sm-10 col-md-10">
+ <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 foot1">
+ <div class="space">Home  Contact Term   privacy   FAQ</div>
+ <div style="margin-top:12px;"><span class="glyphicon glyphicon-copyright-mark" style="padding-right:5px;"></span>2016 Upose.ALL RIGHTS RESERVED</div>
+ </div><!-- col-sm-6 -->
+ <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 foot2">
+  <img src="img/fb1.png" class="img-circle" style="height:27px;margin-bottom:10px;">
+  <img src="img/in.png" class="img-circle" style="height:25px;margin-bottom:10px;">
+  <img src="img/twit1.png" class="img-circle" style="height:27px;margin-bottom:10px;">
+  <img src="img/in.png" class="img-circle" style="height:25px;margin-bottom:10px;">
+ </div><!-- col-sm-6 -->
+</div>
+<div class="col-lg-1 col-sm-1 col-md-1"></div>
+</div>
+</div><!-- container-fluid -->
+</div><!--footer-->
+   </body>
+</html>

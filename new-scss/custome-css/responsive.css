@@ -1,0 +1,89 @@
+@media (min-width : 1024px) and (max-width : 1200px){}
+
+@media  (min-width : 768px) and (max-width : 1023px){
+.educationtitle{
+	font-size: 0.8em;
+}
+}
+
+@media only screen and (max-width : 767px) {
+.container{
+	width: 100%;
+}
+.navbar-default .navbar-toggle {
+    border-color: #ddd;
+    display: none;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: -25px;
+    padding: 0px;
+}
+#sectionarea{
+	padding: 25px 0;
+}
+.pagetitle{
+	 font-size: 2.2em;
+}
+.wordsaboutme{
+	font-size: 1.8em;
+}
+.mygalarycoverouter{
+	margin-top: 15px;
+}
+.responsivemyprofile{
+	display: none;
+}
+.myservicestiles{
+	margin-top: 25px;
+}
+.responsivemylearning{
+	margin-top: 30px;
+}
+.agile_count_grid{
+	float: left;
+	width: 100%;
+	margin-top: 25px;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #44c7f4;
+}
+.mygalarycoverouter div.agile_count_grid:last-child{
+ border-bottom: none;
+}
+}
+
+@media only screen and (max-width : 639px){
+.educationtitle{
+	font-size: 1.2em;
+}
+}
+
+@media only screen and (max-width : 479px) {
+.educationexp{
+	width: 100%;
+}
+.educationexpinfo{
+	width: 100%;
+	margin-top: 12px;
+}
+.educationtitle{
+	font-size: 1em; 
+}
+}
+
+
+
+/*
+@media only screen and (max-width : 736px) {}
+
+@media only screen and (max-width : 667px) {}
+
+@media only screen and (max-width : 480px) {}
+
+@media only screen and (max-width : 414px) {}
+
+@media only screen and (max-width : 375px) {}
+
+@media only screen and (max-width : 360px) {}
+
+@media only screen and (max-width : 320px) {}
+*/

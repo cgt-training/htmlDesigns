@@ -1,0 +1,1067 @@
+
+::::::::::: JavaScript Introduction File :::::::::::
+
+// Single Line Comment :
+
+/*
+	Multiple
+	line
+	Comment.
+*/
+
+
+// SemiColons are optional :
+
+ <script language="javascript" type="text/javascript">
+ 
+      var1 = 10
+      var2 = 20
+   
+</script>
+
+
+// JavaScript in <head>...</head> section :
+
+<html>
+
+   <head>
+   
+      <script type="text/javascript">
+        
+            function sayHello() {
+               alert("Hello World")
+            }
+        
+      </script>
+      
+   </head>
+   
+   <body>
+      <input type="button" onclick="sayHello()" value="Say Hello" />
+   </body>
+   
+</html>
+
+
+// JavaScript in <body>...</body> section :
+
+<html>
+
+   <head>
+
+   </head>
+   
+   <body>
+    
+      <script type="text/javascript">
+        
+            document.write("Hello World")
+         
+      </script>
+      
+      <p>This is web page body </p>
+      
+   </body>
+
+</html>
+
+
+// JavaScript in <body> and <head> Sections :
+
+<html>
+
+   <head>
+
+      <script type="text/javascript">
+         <!--
+            function sayHello() {
+               alert("Hello World")
+            }
+         //-->
+      </script>
+
+   </head>
+   
+   <body>
+
+      <script type="text/javascript">
+         <!--
+            document.write("Hello World")
+         //-->
+      </script>
+      
+      <input type="button" onclick="sayHello()" value="Say Hello" />
+      
+   </body>
+
+</html>
+
+
+// JavaScript in External File :
+
+<html>
+
+   <head>
+      <script type="text/javascript" src="filename.js" ></script>
+   </head>
+   
+   <body>
+      .......
+   </body>
+</html>
+
+
+// JavaScript Variable :
+
+<script type="text/javascript">
+   
+      var money;
+      var name;
+   
+</script>
+
+
+<script type="text/javascript">
+   
+      var money, name;
+   
+</script>
+
+<script type="text/javascript">
+   
+      var name = "Ali";
+      var money;
+      money = 2000.50;
+   
+</script>
+
+
+// JavaScript Operators Example :
+
+1. Arithmetic Operator Example :
+
+ <html>
+
+   <body>
+   
+      <script type="text/javascript">
+         <!--
+            var a = 33;
+            var b = 10;
+            var c = "Test";
+            var linebreak = "<br />";
+         
+            document.write("a + b = ");
+            result = a + b;
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("a - b = ");
+            result = a - b;
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("a / b = ");
+            result = a / b;
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("a % b = ");
+            result = a % b;
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("a + b + c = ");
+            result = a + b + c;
+            document.write(result);
+            document.write(linebreak);
+         
+            a = ++a;
+            document.write("++a = ");
+            result = ++a;
+            document.write(result);
+            document.write(linebreak);
+         
+            b = --b;
+            document.write("--b = ");
+            result = --b;
+            document.write(result);
+            document.write(linebreak);
+         //-->
+      </script>
+      
+      Set the variables to different values and then try...
+   </body>
+</html>
+
+
+2. Comparison Operator Example :
+
+
+<html>
+   <body>
+   
+      <script type="text/javascript">
+         <!--
+            var a = 10;
+            var b = 20;
+            var linebreak = "<br />";
+      
+            document.write("(a == b) => ");
+            result = (a == b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a < b) => ");
+            result = (a < b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a > b) => ");
+            result = (a > b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a != b) => ");
+            result = (a != b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a >= b) => ");
+            result = (a >= b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a <= b) => ");
+            result = (a <= b);
+            document.write(result);
+            document.write(linebreak);
+         //-->
+      </script>
+      
+      Set the variables to different values and different operators and then try...
+   </body>
+</html> 
+
+
+3. Logical Operators Example:
+
+<html>
+
+   <body>
+   
+      <script type="text/javascript">
+         <!--
+            var a = true;
+            var b = false;
+            var linebreak = "<br />";
+      
+            document.write("(a && b) => ");
+            result = (a && b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a || b) => ");
+            result = (a || b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("!(a && b) => ");
+            result = (!(a && b));
+            document.write(result);
+            document.write(linebreak);
+         //-->
+      </script>
+      
+      <p>Set the variables to different values and different operators and then try...</p>
+
+   </body>
+
+</html>
+
+
+4. Bitwise Operator Example :
+
+<html>
+
+   <body>
+   
+      <script type="text/javascript">
+         <!--
+            var a = 2; // Bit presentation 10
+            var b = 3; // Bit presentation 11
+            var linebreak = "<br />";
+         
+            document.write("(a & b) => ");
+            result = (a & b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a | b) => ");
+            result = (a | b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a ^ b) => ");
+            result = (a ^ b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(~b) => ");
+            result = (~b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a << b) => ");
+            result = (a << b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("(a >> b) => ");
+            result = (a >> b);
+            document.write(result);
+            document.write(linebreak);
+         //-->
+      </script>
+      
+      <p>Set the variables to different values and different operators and then try...</p>
+
+   </body>
+
+</html>
+
+
+5. Assignment Operators Example :
+
+
+<html>
+
+   <body>
+   
+      <script type="text/javascript">
+         <!--
+            var a = 33;
+            var b = 10;
+            var linebreak = "<br />";
+         
+            document.write("Value of a => (a = b) => ");
+            result = (a = b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("Value of a => (a += b) => ");
+            result = (a += b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("Value of a => (a -= b) => ");
+            result = (a -= b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("Value of a => (a *= b) => ");
+            result = (a *= b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("Value of a => (a /= b) => ");
+            result = (a /= b);
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write("Value of a => (a %= b) => ");
+            result = (a %= b);
+            document.write(result);
+            document.write(linebreak);
+         //-->
+
+      </script>
+      
+      <p>Set the variables to different values and different operators and then try...</p>
+
+   </body>
+
+</html>
+
+6. Conditional Operator (? :) Example :
+
+<html>
+   <body>
+   
+      <script type="text/javascript">
+         <!--
+            var a = 10;
+            var b = 20;
+            var linebreak = "<br />";
+         
+            document.write ("((a > b) ? 100 : 200) => ");
+            result = (a > b) ? 100 : 200;
+            document.write(result);
+            document.write(linebreak);
+         
+            document.write ("((a < b) ? 100 : 200) => ");
+            result = (a < b) ? 100 : 200;
+            document.write(result);
+            document.write(linebreak);
+         //-->
+      </script>
+      
+      <p>Set the variables to different values and different operators and then try...</p>
+   </body>
+</html>
+
+7. typeOf Operator Example : 
+
+<html>
+
+   <body>
+      
+      <script type="text/javascript">
+
+         <!--
+
+            var a = 10;
+            var b = "String";
+            var linebreak = "<br />";
+         
+            result = (typeof b == "string" ? "B is String" : "B is Numeric");
+            document.write("Result => ");
+            document.write(result);
+            document.write(linebreak);
+         
+            result = (typeof a == "string" ? "A is String" : "A is Numeric");
+            document.write("Result => ");
+            document.write(result);
+            document.write(linebreak);
+
+         //-->
+
+      </script>
+      
+      <p>Set the variables to different values and different operators and then try...</p>
+
+   </body>
+
+</html>
+
+
+// if - else statements in JavaScript : 
+
+<html>
+   <body>
+   
+      <script type="text/javascript">
+         <!--
+            var age = 15;
+         
+            if( age > 18 ){
+               document.write("<b>Qualifies for driving</b>");
+            }
+            
+            else{
+               document.write("<b>Does not qualify for driving</b>");
+            }
+         //-->
+      </script>
+      
+      <p>Set the variable to different value and then try...</p>
+   </body>
+</html>
+
+
+// Switch Statement :
+
+<html>
+
+   <body>
+   
+      <script type="text/javascript">
+
+            var grade='A';
+
+            document.write("Entering switch block<br />");
+
+            switch (grade) {
+
+               case 'A': document.write("Good job<br />");
+               break;
+            
+               case 'B': document.write("Pretty good<br />");
+               break;
+            
+               case 'C': document.write("Passed<br />");
+               break;
+            
+               case 'D': document.write("Not so good<br />");
+               break;
+            
+               case 'F': document.write("Failed<br />");
+               break;
+            
+               default:  document.write("Unknown grade<br />")
+
+            }
+
+            document.write("Exiting switch block");
+
+      </script>
+      
+      <p>Set the variable to different value and then try...</p>
+
+   </body>
+
+</html>
+
+
+// Javascript Loops :
+		
+		// While Loops :
+
+<html>
+
+   <body>
+      
+      <script type="text/javascript">
+
+            var count = 0;
+
+            document.write("Starting Loop ");
+         
+            while (count < 10){
+
+               document.write("Current Count : " + count + "<br />");
+
+               count++;
+
+            }
+         
+            document.write("Loop stopped!");
+
+      </script>
+      
+      <p>Set the variable to different value and then try...</p>
+
+   </body>
+
+</html>
+
+
+		// do - while loops :
+
+<html>
+
+   <body>
+   
+      <script type="text/javascript">
+
+            var count = 0;
+            
+            document.write("Starting Loop" + "<br />");
+
+            do{
+
+               document.write("Current Count : " + count + "<br />");
+
+               count++;
+
+            }
+            
+            while (count < 5);
+
+            document.write ("Loop stopped!");
+
+      </script>
+      
+      <p>Set the variable to different value and then try...</p>
+
+   </body>
+
+</html>
+
+
+		// for loop :
+
+<html>
+
+   <body>
+      
+      <script type="text/javascript">
+         
+            var count;
+
+            document.write("Starting Loop" + "<br />");
+         
+            for(count = 0; count < 10; count++){
+
+               document.write("Current Count : " + count );
+
+               document.write("<br />");
+
+            }
+         
+            document.write("Loop stopped!");
+         
+      </script>
+      
+      <p>Set the variable to different value and then try...</p>
+
+   </body>
+
+</html>
+
+
+		// for- in loop :
+
+<html>
+
+   <body>
+      
+      <script type="text/javascript">
+        
+            var aProperty;
+
+            document.write("Navigator Object Properties<br /> ");
+         
+            for (aProperty in navigator) {
+
+               document.write(aProperty);
+
+               document.write("<br />");
+
+            }
+
+            document.write ("Exiting from the loop!");
+        
+      </script>
+      
+      <p>Set the variable to different object and then try...</p>
+
+   </body>
+
+</html>		
+
+
+		// Break Keyword :
+
+<html>
+   <body>
+      
+      <script type="text/javascript">
+
+         var x = 1;
+
+         document.write("Entering the loop<br /> ");
+         
+         while (x < 20) {
+
+            if (x == 5) {
+
+               break; // breaks out of loop completely
+
+            }
+
+            x = x + 1;
+
+            document.write( x + "<br />");
+
+         }
+         
+         document.write("Exiting the loop!<br /> ");
+
+      </script>
+      
+      <p>Set the variable to different value and then try...</p>
+
+   </body>
+
+</html>
+
+
+		// break Keyword with labels :
+
+<html>
+
+   <body>
+      
+      <script type="text/javascript">
+
+            document.write("Entering the loop!<br /> ");
+
+            outerloop: // This is the label name
+         
+            for (var i = 0; i < 5; i++) {
+
+               document.write("Outerloop: " + i + "<br />");
+
+               innerloop:
+
+               for (var j = 0; j < 5; j++) {
+
+                	if (j > 3 ) break ; // Quit the innermost loop
+
+                	if (i == 2) break innerloop; // Do the same thing
+
+                	if (i == 4) break outerloop; // Quit the outer loop
+
+                	document.write("Innerloop: " + j + " <br />");
+               }
+
+            }
+         
+            document.write("Exiting the loop!<br /> ");
+   
+      </script>
+      
+   </body>
+
+</html>
+
+
+		// continue Keyword :
+
+<html>
+
+    <body>
+      
+        <script type="text/javascript">
+        
+            var x = 1;
+
+            document.write("Entering the loop<br /> ");
+         
+            while (x < 10) {
+
+               x = x + 1;
+               
+               if (x == 5){
+
+                  continue; // skill rest of the loop body
+
+               }
+
+               document.write( x + "<br />");
+
+            }
+         
+            document.write("Exiting the loop!<br /> ");
+         
+        </script>
+      
+      <p>Set the variable to different value and then try...</p>
+
+    </body>
+
+</html>
+
+
+// JavaScript functions :
+
+<html>
+
+   <head>
+   
+      <script type="text/javascript">
+
+         function sayHello(name, age)
+         {
+            document.write (name + " is " + age + " years old.");
+         }
+
+      </script>
+      
+   </head>
+
+   <body>
+
+      <p>Click the following button to call the function</p>
+      
+      <form>
+
+         <input type="button" onclick="sayHello('Zara', 7)" value="Say Hello">
+
+      </form>
+      
+      <p>Use different parameters inside the function and then try...</p>
+
+   </body>
+
+</html>
+
+
+// Function With Return statement :
+
+<html>
+
+   <head>
+      
+      <script type="text/javascript">
+
+         function concatenate(first, last)
+         {
+            var full;
+            full = first + last;
+            return full;
+         }
+         
+         function secondFunction()
+         {
+            var result;
+            result = concatenate('Zara', 'Ali');
+            document.write (result );
+         }
+      </script>
+      
+   </head>
+   
+   <body>
+
+      <p>Click the following button to call the function</p>
+      
+      <form>
+         <input type="button" onclick="secondFunction()" value="Call Function">
+      </form>
+      
+      <p>Use different parameters inside the function and then try...</p>
+  
+  </body>
+
+</html>
+
+
+// Dialog Boxes :
+
+	a. Alert Dialog Box : 
+
+		<html>
+
+    	<head>
+   
+      		<script type="text/javascript">
+         	
+            	function Warn() {
+               		alert ("This is a warning message!");
+               		document.write ("This is a warning message!");
+            	}
+         
+      		</script>
+
+   		</head>
+
+   		<body>
+
+      		<p>Click the following button to see the result: </p>
+      
+      		<form>
+
+         		<input type="button" value="Click Me" onclick="Warn();" />
+
+      		</form>
+      
+   </body>
+
+</html>
+
+
+	b. Confirmation Dialog Box :
+
+		<html>
+
+   		<head>
+   
+      		<script type="text/javascript">
+         	
+            	function getConfirmation(){
+
+               			var retVal = confirm("Do you want to continue ?");
+
+               			if( retVal == true ){
+
+                  				document.write ("User wants to continue!");
+                  				return true;
+               			}
+
+               			else{
+
+                  				document.write ("User does not want to continue!");
+                  				return false;
+               			}
+            	}
+       
+    		</script>
+      
+   		</head>
+
+   			<body>
+
+      			<p>Click the following button to see the result: </p>
+      
+      			<form>
+         			<input type="button" value="Click Me" onclick="getConfirmation();" />
+      			</form>
+
+   			</body>
+
+		</html>
+
+
+	c. Prompt Dialog Box : 
+
+	<html>
+    <head>
+      
+      <script type="text/javascript">
+         <!--
+            function getValue(){
+               var retVal = prompt("Enter your name : ", "your name here");
+               document.write("You have entered : " + retVal);
+            }
+         //-->
+      </script>
+    
+
+   </head>
+   
+   <body>
+      <p>Click the following button to see the result: </p>
+      
+      <form>
+         <input type="button" value="Click Me" onclick="getValue();" />
+      </form>
+      
+   </body>
+</html>	
+
+
+
+// Printing A document:
+
+<html>
+
+   <head>
+      
+      <script type="text/javascript">
+         <!--
+         //-->
+      </script>
+   
+   </head>
+   
+   <body>
+      
+      <form>
+         <input type="button" value="Print" onclick="window.print()" />
+      </form>
+   
+   </body>
+<html>
+
+
+
+// JavaScript Objects :
+
+<html>
+   <head>
+      <title>User-defined objects</title>
+      
+      <script type="text/javascript">
+         var book = new Object();   // Create the object
+         book.subject = "Perl"; // Assign properties to the object
+         book.author  = "Mohtashim";
+      </script>
+      
+   </head>
+   
+   <body>
+   
+      <script type="text/javascript">
+         document.write("Book name is : " + book.subject + "<br>");
+         document.write("Book author is : " + book.author + "<br>");
+      </script>
+   
+   </body>
+</html>
+
+   
+   // this Keyword : this keyword is used to refer to the object that has been passed to a function.
+
+
+<html>+
+   <head>
+   
+   <title>User-defined objects</title>
+   
+      <script type="text/javascript">
+         function book(title, author){
+            this.title = title; 
+            this.author  = author;
+         }
+      </script>
+      
+   </head>
+   <body>
+   
+      <script type="text/javascript">
+         var myBook = new book("Perl", "Mohtashim");
+         document.write("Book title is : " + myBook.title + "<br>");
+         document.write("Book author is : " + myBook.author + "<br>");
+      </script>
+      
+   </body>
+</html>
+
+
+
+// Looping through the array elements : 
+
+var fruits, text, fLen, i;
+
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+fLen = fruits.length;
+
+text = "<ul>";
+
+for (i = 0; i < fLen; i++) {
+
+    text += "<li>" + fruits[i] + "</li>";
+
+}
+
+
+
+//  Array Methods:
+
+   // toString() :
+
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+      document.getElementById("demo").innerHTML = fruits.toString();
+
+   // join() :
+   
+      var fruits = ["Banana", "Orange","Apple", "Mango"];
+      document.getElementById("demo").innerHTML = fruits.join(" * ");   
+
+   // pop() :
+   
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits.pop();  // Removes the last element ("Mango") from fruits.   
+
+   // push() :
+   
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits.push("Kiwi");       //  Adds a new element ("Kiwi") to fruits.
+
+   // shift() :
+   
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits.shift();            // Removes the first element "Banana" from fruits.
+
+   // unshift() :
+   
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits.unshift("Lemon");    // Adds a new element "Lemon" to fruits.
+
+
+
+// 

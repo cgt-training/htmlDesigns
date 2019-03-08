@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAQ,CACJ,UAAU,CAAE,IAAI,CAChB,KAAK,CAAE,OAAO,CACd,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,MAAM,CAElB,SAAS,CACR,UAAU,CAAE,IAAI,CACb,KAAK,CAAE,OAAO,CACd,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,MAAM",
+"sources": ["ui-layout.scss"],
+"names": [],
+"file": "ui-layout.css"
+}
